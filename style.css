@@ -1,0 +1,43 @@
+
+body{
+    font-family:"Hurricane", cursive;
+    margin:0;
+    border:0;
+}
+ .shadow{
+    background:linear-gradient(100deg,#1a1811, #9c812f, #ffe8a3);
+    width:100vw;
+    height:100vh;
+ }
+.author{
+    font-size:25px;
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:rgb(255, 244, 198);
+}
+.title a{
+    color:rgb(255, 244, 198);
+    width:700px;
+    position:absolute;
+    text-align:end;
+    bottom:10px;
+    right: 50px;
+    font-size:150px;
+    text-decoration: none;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.title a:hover{
+    opacity:0.3;
+}

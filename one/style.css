@@ -1,0 +1,52 @@
+html{
+    background: linear-gradient(20deg, rgb(46, 42, 22)50%,rgb(247, 236, 183)); 
+    width:100vw;
+    height:100vh;
+}
+.wrapper-one{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+    align-items:center;
+}
+
+.one {
+    font-size:15px;
+    color: rgb(46, 42, 22);
+    width: 30em;
+    text-align:center;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 1;
+        color: rgb(142, 134, 95);
+	}
+	100% {
+		opacity: 1;
+        color:rgb(46, 42, 22);
+	}
+}
+
+.next  a{
+    bottom:3px;
+    right:5px;
+    position: fixed;
+    font-size:20px;
+    color: rgb(142, 134, 95);
+    text-decoration: none;
+    font-family:"Hurricane", cursive;
+    margin-right:20px;
+}
+.next a:hover{
+    background-color:rgb(56, 74, 52);
+    border-radius: 20px;
+    padding-left:10px;
+    padding-right:10px;
+}
