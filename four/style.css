@@ -71,3 +71,15 @@ body{
 		opacity: 1;
 	}
 }
+
+@media all and (max-width:500px){
+    .wrapper div{
+        font-size:10px;
+    }
+    button{
+        left:50vw;
+    }
+    .text{
+        display:none;
+    }
+}

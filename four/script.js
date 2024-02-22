@@ -25,6 +25,7 @@ window.addEventListener("load", function () {
     const story_text3 = `How, in such a dark place, gold draws so much light to itself is a mystery to me. But I see why in ancient times statues of the Buddha were gilt with gold and why gold leaf covered the walls of the homes of the nobility. Modem man, in his well-lit house, knows nothing of the beauty of gold; but those who lived in the dark houses of the past were not merely captivated by its beauty, they also knew its practical value; for gold, in these dim rooms, must have served the function of a reflector.`
     const story_text4 = `Their use of gold leaf and gold dust was not mere extravagance. Its reflective properties were put to use as a source of illumination. Silver and other metals quickly lose their gloss, but gold retains its brilliance indefinitely to light the darkness of the room. This is why gold was held in such incredibly high esteem.`
 
+  
     document.addEventListener("mousemove", (e) => {
         const mouseX = e.clientX;
         const mouseY = e.clientY;
@@ -39,3 +40,19 @@ window.addEventListener("load", function () {
           rgba(14, 13, 6, 1)
         )`;
       });
+
+      const mediaQueryCondition = window.matchMedia( '( min-width: 500px )' )
+        document.addEventListener("DOMContentLoaded", function() {
+          setInterval(() => {
+              const gradientCenterX = Math.random() * 100;
+              const gradientCenterY = Math.random() * 100;
+            
+              const revealedArea = document.querySelector(".revealed-area");
+              revealedArea.style.background = `radial-gradient(
+                circle 150px at ${gradientCenterX}% ${gradientCenterY}%,
+                transparent 10%,
+                rgba(14, 13, 6, 1)
+              )`;
+          }, 1000);
+      });
+    

@@ -41,3 +41,10 @@ body{
 .title a:hover{
     opacity:0.3;
 }
+
+@media all and (max-width:500px){
+    .title a{
+        font-size:90px;
+    }
+    
+}

@@ -181,3 +181,11 @@ button{
     padding-left:10px;
     padding-right:10px;
 }
+@media all and (max-width:500px){
+    .wrapper div, .wrapper_2 div{
+        font-size:10px;
+    }
+    button{
+        left:50vw;
+    }
+}

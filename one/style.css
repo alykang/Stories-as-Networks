@@ -50,3 +50,8 @@ html{
     padding-left:10px;
     padding-right:10px;
 }
+@media all and (max-width:500px){
+    .one {
+        font-size:10px;
+    }
+}

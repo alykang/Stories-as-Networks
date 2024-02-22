@@ -40,14 +40,13 @@ window.addEventListener("load", function () {
         var wrapper = document.querySelector(".wrapper");
         var wrapper2 = document.querySelector(".wrapper_2");
 
-        // Fade out the wrapper div
         wrapper.classList.add("fade-out");
 
-        // Show and fade in the wrapper_2 div after a delay
+
         setTimeout(function() {
             wrapper.classList.add("hidden");
             wrapper2.classList.remove("hidden");
             wrapper2.classList.add("fade-in");
-        }, 1000); // 1 second delay to match the transition duration
+        }, 1000); 
     });
   });

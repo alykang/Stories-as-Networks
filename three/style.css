@@ -60,3 +60,8 @@ body:before{
     padding-left:10px;
     padding-right:10px;
 }
+@media all and (max-width:500px){
+    .wrapper div{
+        font-size:10px;
+    }
+}
