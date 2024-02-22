@@ -27,32 +27,16 @@ window.addEventListener("load", function () {
 
   
     document.addEventListener("mousemove", (e) => {
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-      
-        const gradientCenterX = (mouseX / window.innerWidth) * 100;
-        const gradientCenterY = (mouseY / window.innerHeight) * 100;
-      
-        const revealedArea = document.querySelector(".revealed-area");
-        revealedArea.style.background = `radial-gradient(
-          circle 150px at ${gradientCenterX}% ${gradientCenterY}%,
-          transparent 10%,
-          rgba(14, 13, 6, 1)
-        )`;
-      });
-
-      const mediaQueryCondition = window.matchMedia( '( min-width: 500px )' )
-        document.addEventListener("DOMContentLoaded", function() {
-          setInterval(() => {
-              const gradientCenterX = Math.random() * 100;
-              const gradientCenterY = Math.random() * 100;
-            
-              const revealedArea = document.querySelector(".revealed-area");
-              revealedArea.style.background = `radial-gradient(
-                circle 150px at ${gradientCenterX}% ${gradientCenterY}%,
-                transparent 10%,
-                rgba(14, 13, 6, 1)
-              )`;
-          }, 1000);
-      });
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
     
+      const gradientCenterX = (mouseX / window.innerWidth) * 100;
+      const gradientCenterY = (mouseY / window.innerHeight) * 100;
+    
+      const revealedArea = document.querySelector(".revealed-area");
+      revealedArea.style.background = `radial-gradient(
+        circle 150px at ${gradientCenterX}% ${gradientCenterY}%,
+        transparent 10%,
+        rgba(14, 13, 6, 1)
+      )`;
+    });

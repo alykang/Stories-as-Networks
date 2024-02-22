@@ -73,13 +73,15 @@ body{
 }
 
 @media all and (max-width:500px){
+
     .wrapper div{
         font-size:10px;
     }
-    button{
-        left:50vw;
+    .next a{ 
+        z-index: 1;
     }
     .text{
         display:none;
     }
+    
 }
